@@ -1,0 +1,471 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silage </title>
+    <!-- <link rel="icon" href="./televein.png"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    <!-- Tailwind CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <style>
+
+
+        /* #home {
+            background-size: cover;
+            background-position: center;
+        } */
+         /* Hide the navigation bar by default */
+         /* #navbar {
+            background: transparent;
+        } */
+       /*  #navbar.hidden {
+            top: -64px;
+        } */
+         /* Mobile Menu */
+         #mobile-menu {
+            display: none;
+        }
+        .bg-black-50 {
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+        }
+        #more {display: none;}
+        @media (max-width: 768px) {
+            #mobile-menu {
+                display: block;
+            }
+            #navbar ul {
+                display: none;
+            }
+            #navbar ul.show {
+                display: flex;
+                flex-direction: column;
+                background-color: black;
+                position: absolute;
+                top: 60px; /* Adjust the height of your navbar */
+                left: 0;
+                width: 100%;
+                padding: 20px;
+            }
+            #navbar ul.show li {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 w-full ">
+ <!-- Navigation -->
+ <nav id="navbar" class="fixed top-0 left-0 w-full bg-white py-4 z-10 ">
+    <div class=" px-4 flex justify-between items-center">
+        <a href="#" class="text-black-900 text-4xl font-bold flex items-center justify-center">
+            <!-- <img class="align-middle mr-3 pt-1 h-10" src="televein.png" alt="Logo" >
+            <span class="text-blue-900">Tele</span>Vein -->
+            Silage 
+        </a>
+            
+        <!-- Mobile Menu Icon -->
+        <div id="mobile-menu" class="text-black cursor-pointer">
+            <div style="background-color: rgba(0, 0, 0, 0); padding: 5px; display: inline-block;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 12h18M3 6h18M3 18h18"></path>
+                </svg>
+            </div>
+        </div>
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-4 ">
+            <li><a href="#home" class="text-black-900 font-bold text-xl ">Home</a></li>
+            <li><a href="#about" class="text-black-900 font-bold text-xl">About</a></li>
+            <!-- <li><a href="#services" class="text-black-900 font-bold text-lg">Services</a></li> -->
+            <li><a href="#products" class="text-black-900 font-bold text-xl">Products</a></li>
+            <!-- <li><a href="#team" class="text-black-900 font-bold text-lg">Team</a></li> -->
+
+        </ul>
+        <a href="mailto:televeininfo@gmail.com" class="text-black-900 font-bold text-xl hidden md:flex">Contact Us</a>
+    </div>
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu-dropdown" class="hidden">
+        <li><a href="#" class="text-white">Home</a></li>
+        <li><a href="#about" class="text-white">About</a></li>
+        <!-- <li><a href="#services" class="text-white">Skills</a></li> -->
+        <li><a href="#products" class="text-white">Products</a></li>
+        <!-- <li><a href="#team" class="text-white">Team</a></li> -->
+        <li><a href="mailto:televeininfo@gmail.com" class="text-white">Contact Us</a></li>
+    </ul>
+</nav>
+
+
+    <!-- Main Content -->
+    <div class="w-full">
+
+  <!-- Home Section -->
+  
+  <section id="home" class=" relative flex items-center justify-center bg-cover text-center" style="background-image: url('home.png'); height: 100vh;">
+    <div class="absolute inset-0 bg-black-50"></div> <!-- Overlay -->
+    <div class="relative z-9">
+        <h2 class="text-7xl font-bold text-white mb-4">Welcome to the Our Silage Product</h2>
+        <p class="text-5xl font-bold text-white">with Quality Services</p>
+    </div>
+</section>
+
+
+
+                <!-- About Section -->
+                <section id="about" class="pt-20">
+                    <div class="px-8 md:px-12 lg:px-20 mx-auto  ">
+                        <h2 class="text-6xl text-blue-900 font-semibold mb-4">About Us</h2>
+                        <div class="smallabout">
+                        <h3 class="text-3xl font-semibold mb-4  pt-3">Fueling success through innovation in the digital age</h3>
+                        <p class="  text-2xl">Silage is a feed for animals that's made by fermenting green plants in the absence of oxygen. The process of making silage, also known as ensilage, preserves nutrients in the plants and allows them to be fed to animals all year.</p>
+                    </div>
+                        <span id="dots"></span>
+                        <span id="more">
+                            <div class="more">
+                        <!-- <p class=" text-2xl"> In the rapidly evolving landscape of business and technology, our mission remains unwavering: to drive transformation and empower companies for success. With a keen focus on innovation and a deep well of expertise, we are committed to propelling businesses into the digital age and beyond.</p> -->
+                        <h3 class="text-4xl font-semibold mb-4  pt-3">Here are some things to know about silage:</h3>
+                        <h3 class="text-3xl font-semibold mb-4  pt-3">What crops can be used
+                        </h3>
+                         <p class="text-2xl">Silage can be made from many different types of green plants, including corn, legumes, grasses, and weeds. </p>
+                         
+                         <h3 class="text-3xl font-semibold mb-4   pt-3">How it's made
+                        </h3>
+                         <P class=" text-2xl">
+                            The process of making silage involves cutting and chopping the plants, then allowing them to wilt in the field to reduce moisture content. The plants are then placed in a silo and left to ferment. 
+                         </P>
+                         <h3 class="text-3xl font-semibold mb-4   pt-3">Why it's made
+                        </h3>
+                         <p class=" text-2xl">Silage is made to preserve nutrients and provide a good quality food for animals, especially during lean seasons when there's less green fodder available. 
+                        </p>
+                         <h3 class="text-3xl font-semibold mb-4 "  >How it's stored
+                        </h3>
+                         <p class=" text-2xl">Silage is often formed into cylindrical bales and sealed in polywrap. 
+                        </p>   
+                         <h3 class="text-3xl font-semibold mb-4 "  >How it's eaten
+
+                        </h3>
+                         <p class=" text-2xl">Silage is eaten by many different types of animals, including cattle, sheep, donkeys, camels, chickens, rabbits, geese, goats, and pigs.
+                        </p>   
+                            </div>
+                            </span> <div class="pt-3 ">
+                         <button onclick="myFunction()" id="myBtn" class="btn  bg-gradient-to-r from-black to-blue-500 hover:from-black hover:to-blue-500 focus:outline-none focus:ring focus:ring-blue-300 active:bg-blue-700 px-5 py-2 text-sm leading-5 rounded-full font-semibold text-white">
+                            Read More
+                          </button> 
+                        </div></div>
+                        <!-- <p class="text-lg text-gray-700"  -->
+                               
+                         
+                </section>
+               
+<!-- Services Section -->
+<!-- <section id="services" class="pt-20 ">
+    <div class=" mx-auto px-8 md:px-12 lg:px-20">
+        <h2 class="text-6xl  font-semibold mb-4 text-center text-blue-900">Services</h2>
+        
+        <p class="text-center text-2xl pb-5">Televein We help you to build high-quality digital solutions and products as well as deliver a wide range of related professional services. We are providing world-class service to our clients.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    
+                    <div class="py-4 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-gradient-to-r bg-gray-200 hover:from-black hover:to-blue-500 hover:text-white text-black font-semibold px-6 py-3 rounded-md group">
+                        
+                          <div class="item">
+                            <div class="flex justify-center">
+                              <img src="web.png" style="width: 150px;height: 150px;">
+                            </div>
+                            <div class="text-center"> 
+                              <h3 class="text-xl font-semibold mb-2 text-black group-hover:text-white">Web Development</h3>
+                              <p class="text-gray-700 group-hover:text-white"> Our team of expert developers utilizes the latest technologies and frameworks to build web applications that meet your unique business needs. Whether you require a simple content management system or a complex e-commerce platform, we have the skills and experience to deliver.</p>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="py-4 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-gradient-to-r bg-gray-200 hover:from-black hover:to-blue-500 hover:text-white text-black font-semibold px-6 py-3 rounded-md group">
+                          <div class="item">
+                            <div class="flex justify-center"> 
+                              <img src="app.jpeg" style="width: 150px;height: 150px;">
+                            </div>
+                            <div class="text-center"> 
+                              <h3 class="text-xl font-semibold mb-2 text-black group-hover:text-white">App Development</h3>
+                              <p class="text-gray-700 group-hover:text-white">Our mobile app development services are designed to bring your app ideas to life. We create high-quality, user-friendly mobile applications for both iOS and Android platforms. Whether you need a native app or a cross-platform solution, we ensure a seamless user experience and robust performance.</p>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="py-4 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-gradient-to-r bg-gray-200 hover:from-black hover:to-blue-500 hover:text-white text-black font-semibold px-6 py-3 rounded-md group">
+                          <div class="item">
+                            <div class="flex justify-center"> 
+                              <img src="seo.png" style="width: 150px;height: 150px;">
+                            </div>
+                            <div class="text-center"> 
+                              <h3 class="text-xl font-semibold mb-2 text-black group-hover:text-white">SEO</h3>
+                              <p class="text-gray-700 group-hover:text-white">Boost your online visibility and drive more traffic to your website with our professional SEO services. Our team of SEO experts uses proven strategies and techniques to improve your search engine rankings and ensure your target audience finds you easily.</p>
+                            </div>
+                          </div>
+                      </div>
+        
+                </div>
+            </div>
+        </section> -->
+<!-- Products Section -->
+<section id="products" class="pt-20">
+    <div class="px-8 md:px-12 lg:px-20 mx-auto">
+        <h2 class="text-6xl font-semibold mb-4 text-center text-blue-900">Silage Products</h2>
+        <p class="text-center text-2xl pb-5">
+            Discover our range of high-quality silage products designed for optimal livestock nutrition.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 pb-20">
+            <div class="py-4 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-gradient-to-r bg-gray-200 hover:from-black hover:to-blue-500 hover:text-white text-black font-semibold px-6 py-3 rounded-md group">
+                <div class="text-center">
+                    <img src="maize-silage.png" alt="Maize Silage" class="w-36 h-36 mb-2"> <!-- Add actual image URL -->
+                    <h3 class="text-xl font-semibold mb-2 text-black group-hover:text-white">Maize Silage</h3>
+                    <p class="text-gray-700 group-hover:text-white">Can cost around ₹5 per kilogram</p>
+                </div>
+            </div>
+
+            <div class="py-4 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-gradient-to-r bg-gray-200 hover:from-black hover:to-blue-500 hover:text-white text-black font-semibold px-6 py-3 rounded-md group">
+                <div class="text-center">
+                    <img src="corn-maize-silage.png" alt="Corn Maize Silage" class="w-36 h-36 mb-2"> <!-- Add actual image URL -->
+                    <h3 class="text-xl font-semibold mb-2 text-black group-hover:text-white">Corn Maize Silage</h3>
+                    <p class="text-gray-700 group-hover:text-white">Can cost around ₹6 per kilogram</p>
+                </div>
+            </div>
+
+            <div class="py-4 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-gradient-to-r bg-gray-200 hover:from-black hover:to-blue-500 hover:text-white text-black font-semibold px-6 py-3 rounded-md group">
+                <div class="text-center">
+                    <img src="corn-silage.png" alt="Corn Silage" class="w-36 h-36 mb-2"> <!-- Add actual image URL -->
+                    <h3 class="text-xl font-semibold mb-2 text-black group-hover:text-white">Corn Silage</h3>
+                    <p class="text-gray-700 group-hover:text-white">Can cost around ₹6.30 per kilogram</p>
+                </div>
+            </div>
+
+            <div class="py-4 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-gradient-to-r bg-gray-200 hover:from-black hover:to-blue-500 hover:text-white text-black font-semibold px-6 py-3 rounded-md group">
+                <div class="text-center">
+                    <img src="super-napier-silage.png" alt="Super Napier Grass Silage" class="w-36 h-36 mb-2"> <!-- Add actual image URL -->
+                    <h3 class="text-xl font-semibold mb-2 text-black group-hover:text-white">Super Napier Grass Silage</h3>
+                    <p class="text-gray-700 group-hover:text-white">Can cost around ₹5,000 per ton</p>
+                </div>
+            </div>
+
+            <div class="py-4 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-gradient-to-r bg-gray-200 hover:from-black hover:to-blue-500 hover:text-white text-black font-semibold px-6 py-3 rounded-md group">
+                <div class="text-center">
+                    <img src="nutririch-corn-silage.png" alt="NutriRich Corn Silage" class="w-36 h-36 mb-2"> <!-- Add actual image URL -->
+                    <h3 class="text-xl font-semibold mb-2 text-black group-hover:text-white">NutriRich Corn Silage</h3>
+                    <p class="text-gray-700 group-hover:text-white">Can cost around ₹6 per kilogram</p>
+                </div>
+            </div>
+
+            <div class="py-4 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-gradient-to-r bg-gray-200 hover:from-black hover:to-blue-500 hover:text-white text-black font-semibold px-6 py-3 rounded-md group">
+                <div class="text-center">
+                    <img src="baby-corn-silage.png" alt="Baby Corn Silage" class="w-36 h-36 mb-2"> <!-- Add actual image URL -->
+                    <h3 class="text-xl font-semibold mb-2 text-black group-hover:text-white">Baby Corn Silage</h3>
+                    <p class="text-gray-700 group-hover:text-white">Can cost around ₹5.99 per kilogram</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+           
+        <!-- Content Above Footer
+    <div class="flex-grow"> -->
+        <!-- Your content goes here -->
+    <!-- </div> -->
+
+      <!-- Services Section -->
+      <!-- <section id="team" class="pt-20 ">
+        <div class=" mx-auto px-4 md:px-12 ">
+            <h2 class="text-6xl  font-semibold mb-4 text-center text-blue-900">Team</h2>
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-8">
+      
+          <div class="max-w-xs bg-white rounded-lg shadow-md p-6 m-4 text-center">
+              <img src="bharathan.jpg" alt="Member 1" class="w-24 h-24 rounded-full mx-auto">
+              <h2 class="text-xl font-semibold mt-4">Bharathan</h2>
+              <p class="text-gray-600">Marketing Specialist</p>
+              <div class="flex justify-center mt-4 space-x-4">
+                <a href="https://www.facebook.com/bharathan.bharathan.58323431" class="fab fa-facebook-f hover:blue" target="_blank"></a>
+                <a href="https://twitter.com/BharathanRavic1/status/1700167105206014379?t=xUQf-khECmbuj5eK85Tbhw&s=19" class="fab fa-x-twitter" target="_blank"></a>
+                <a href="https://www.instagram.com/bharathanravichandran/" class="fab fa-instagram" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/bharathan-ravichandran-9aa454226" class="fab fa-linkedin" target="_blank"></a>
+              </div>
+          </div>
+          <div class="max-w-xs bg-white rounded-lg shadow-md p-6 m-4 text-center">
+            <img src="dinesh.jpg" alt="Member 1" class="w-24 h-24 rounded-full mx-auto">
+            <h2 class="text-xl font-semibold mt-4">Dinesh</h2>
+            <p class="text-gray-600">Software Engineer</p>
+            <div class="flex justify-center mt-4 space-x-4">
+              <a href="https://www.facebook.com/profile.php?id=100024835640045" class="fab fa-facebook-f" target="_blank"></a>
+              <a href="https://twitter.com/Dinesh638R/" class="fab fa-x-twitter" target="_blank"></a>
+              <a href="https://instagram.com/_._dinesh_._._?igshid=ZGUzMzM3NWJiOQ==" class="fab fa-instagram" target="_blank"></a>
+              <a href="https://www.linkedin.com/in/dinesh-s-58a6b3263" class="fab fa-linkedin" target="_blank"></a>
+            </div>
+        </div>
+        <div class="max-w-xs bg-white rounded-lg shadow-md p-6 m-4 text-center">
+          <img src="gokul.jpg" alt="Member 1" class="w-24 h-24 rounded-full mx-auto">
+          <h2 class="text-xl font-semibold mt-4">Gokula Kannan</h2>
+          <p class="text-gray-600">Software Developer</p>
+          <div class="flex justify-center mt-4 space-x-4">
+            <a href="https://www.facebook.com/gokulakannan.v.3" class="fab fa-facebook-f" target="_blank"></a>
+            <a href="https://twitter.com/GokulaKannanV04" class="fab fa-x-twitter" target="_blank"></a>
+            <a href="https://www.instagram.com/gokulakannanv04/" class="fab fa-instagram" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/gokula-kannan-v/" class="fab fa-linkedin" target="_blank"></a>
+          </div>
+      </div>
+      <div class="max-w-xs bg-white rounded-lg shadow-md p-6 m-4 text-center">
+        <img src="bharath.jpg" alt="Member 1" class="w-24 h-24 rounded-full mx-auto">
+        <h2 class="text-xl font-semibold mt-4">Bharath Kumar</h2>
+        <p class="text-gray-600">Resource Provider</p>
+        <div class="flex justify-center mt-4 space-x-4">
+          <a href="https://www.facebook.com/profile.php?id=100075005269979&mibextid=ZbWKwL" class="fab fa-facebook-f" target="_blank"></a>
+          <a href="https://x.com/5019_d?t=NGhsZWNynvca0UlSj_Lbxw&s=08 " class="fab fa-x-twitter" target="_blank"></a>
+          <a href="https://instagram.com/d.bharathkumar_1412" class="fab fa-instagram" target="_blank"></a>
+          <a href="https://www.linkedin.com/in/bharathkumar-duraisamy-4b5491230" class="fab fa-linkedin" target="_blank"></a>
+        </div>
+    </div>
+     
+      </div>
+  </div>
+        </div>
+      </section> -->
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 bg-gradient-to-r  from-black to-blue-500">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-between">
+                <!-- About Section -->
+                <!-- <div class="w-full sm:w-1/2 md:w-1/3 mb-6">
+                    <h5 class="uppercase font-bold mb-2">About Us</h5>
+                    <p class="text-sm">
+                        We are committed to providing the best services to our customers. Our team is dedicated to ensuring satisfaction and excellence in all our offerings.
+                    </p>
+                </div> -->
+                <!-- Links Section -->
+                <div class="w-full sm:w-1/2 md:w-1/3 mb-6">
+                    <h5 class="uppercase font-bold mb-2">Quick Links</h5>
+                    <ul class="list-none">
+                        <li class="mb-2">
+                            <a href="#" class="text-sm hover:underline">Home</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#about" class="text-sm hover:underline">About</a>
+                        </li>
+                        <!-- <li class="mb-2">
+                            <a href="#services" class="text-sm hover:underline">Services</a>
+                        </li> -->
+                        <li class="mb-2">
+                            <a href="#products" class="text-sm hover:underline">Products</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Contact Section -->
+                <div class="w-full sm:w-1/2 md:w-1/3 mb-6">
+                    <h5 class="uppercase font-bold mb-2">Contact Us</h5>
+                    <p class="text-sm mb-2">
+                        Karur,TamilNadu.
+                    </p>
+                    <p class="text-sm mb-2">
+                        Email: televeininfo@gmail.com
+                    </p>
+                    <p class="text-sm">
+                        Phone: (91) 9445617174
+                       
+                    </p>
+                </div>
+                <!-- Social Media Section -->
+                <div class="w-full md:w-1/3 mb-6">
+                    <h5 class="uppercase font-bold mb-2">Follow Us</h5>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=61550759655542" class="text-white hover:text-gray-400" target="_blank">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="https://twitter.com/TeleVein" class="text-white hover:text-gray-400" target="_blank">
+                            <i class="fab fa-x-twitter fa-2x"></i>
+                        </a>
+                        <a href="https://www.instagram.com/televein04/" class="text-white hover:text-gray-400" target="_blank">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/televein/" class="text-white hover:text-gray-400" target="_blank">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-4 bg-gradient-to-r  to-black from-blue-500">
+            <p class="text-sm">
+                &copy; 2024 TeleVein. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+
+    </div>
+
+    <script>  // Set the height of the home section to match the viewport height
+        document.addEventListener('DOMContentLoaded', function () {
+            var homeSection = document.getElementById('home');
+            homeSection.style.height = window.innerHeight + 'px';
+        });
+
+        // Update the height of the home section when the window is resized
+        window.addEventListener('resize', function () {
+            var homeSection = document.getElementById('home');
+            homeSection.style.height = window.innerHeight + 'px';
+        });
+        // window.addEventListener('scroll', function() {
+        //     const navbar = document.getElementById('navbar');
+        //     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        //     if (scrollTop === 0) {
+        //         navbar.classList.add('hidden');
+        //     } else {
+        //         navbar.classList.remove('hidden');
+        //     }
+        // });
+        const mobileMenuIcon = document.getElementById('mobile-menu');
+        const mobileMenuDropdown = document.getElementById('mobile-menu-dropdown');
+
+        mobileMenuIcon.addEventListener('click', function() {
+            mobileMenuDropdown.classList.toggle('show');
+        });
+
+
+        
+        function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+    </script> <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "j4r8rg58lg");
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6XXKV8QRLX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6XXKV8QRLX');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1409816926404941"
+     crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
