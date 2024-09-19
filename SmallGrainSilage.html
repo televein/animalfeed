@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Grain Silage Product Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .bg-black-50 {
+            background-color: rgba(0, 0, 0, 0.5); /* Background overlay */
+        }
+        .product-gallery img {
+            width: 100%; /* Take up full width of the container */
+            height: 250px; /* Set a fixed height */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            border-radius: 10px; /* Optional: adds a bit of roundness to the corners */
+        }
+        /* Card styling */
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Grid layout */
+        .grid-cols-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            align-items: center; /* Aligns the content vertically in the middle */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            margin: auto; /* Centers the image horizontally */
+        }
+
+        /* Icon styling */
+        .icon {
+            color: #3490dc;
+            margin-right: 10px;
+        }
+
+        /* Typography */
+        h3 {
+            color: #1c3d5a;
+            font-weight: bold;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        li i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 w-full">
+    <!-- Header -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full bg-white py-4 z-10">
+        <div class="px-4 flex justify-between items-center">
+            <a href="index.html" class="text-black-900 text-4xl font-bold flex items-center">Silage</a>
+            <ul class="hidden md:flex space-x-4">
+                <li><a href="index.html#home" class="text-black-900 font-bold text-xl">Home</a></li>
+                <li><a href="index.html#about" class="text-black-900 font-bold text-xl">About</a></li>
+                <li><a href="index.html#products" class="text-black-900 font-bold text-xl">Products</a></li>
+            </ul>
+            <a href="mailto:televeininfo@gmail.com" class="text-black-900 font-bold text-xl hidden md:flex">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="pt-20 px-8 md:px-12 lg:px-20 mx-auto">
+        <!-- Page Title -->
+        <h1 class="text-6xl font-semibold text-blue-900 text-center mb-10">Product Details - Small Grain Silage</h1>
+
+        <!-- Gallery Section -->
+        <section class="product-gallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-16">
+            <div>
+                <img src="small-grain-silage1.jpg" alt="Small Grain Silage Image 1">
+            </div>
+            <div>
+                <img src="small-grain-silage2.jpg" alt="Small Grain Silage Image 2">
+            </div>
+            <div>
+                <img src="small-grain-silage3.jpg" alt="Small Grain Silage Image 3">
+            </div>
+        </section>
+
+        <!-- Product Process Section -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-semibold mb-4 text-blue-900">Process of Making Small Grain Silage</h2>
+            <p class="text-2xl mb-4">Small grain silage is prepared from crops like oats, barley, and wheat, which are harvested and fermented for high-quality animal feed.</p>
+            <img src="small-grain-silage-process.jpg" alt="Small Grain Silage Process" class="w-full h-96 object-cover mb-4">
+            <p class="text-2xl">The grains are chopped, fermented, and stored in silos or bales, ensuring they remain nutrient-dense and palatable for livestock.</p>
+        </section>
+
+        <!-- Ingredients Section -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-semibold mb-4 text-blue-900">Ingredients in Small Grain Silage</h2>
+            <div class="grid-cols-2">
+                <div class="card">
+                    <ul>
+                        <li><i class="fas fa-seedling icon"></i><p>Oats, barley, wheat</p></li>
+                        <li><i class="fas fa-bolt icon"></i><p>High energy content</p></li>
+                        <li><i class="fas fa-apple-alt icon"></i><p>Rich in carbohydrates</p></li>
+                        <li><i class="fas fa-carrot"></i><p>Fiber for digestion</p></li>
+                    </ul>
+                </div>
+                <img src="small-grain-silage-ingredients.jpg" alt="Ingredients Image" class="rounded-lg">
+            </div>
+        </section>
+
+        <!-- Nutrients Section -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-semibold mb-4 text-blue-900">Nutrients in Small Grain Silage</h2>
+            <div class="grid-cols-2">
+                <img src="small-grain-nutrients.jpg" alt="Nutrients Image" class="rounded-lg">
+                <div class="card">
+                    <ul>
+                        <li><i class="fas fa-carrot icon"></i><p>High in carbohydrates</p></li>
+                        <li><i class="fas fa-leaf icon"></i><p>Rich in fiber</p></li>
+                        <li><i class="fas fa-pills icon"></i><p>Vitamins and minerals</p></li>
+                        <li><i class="fas fa-calculator icon"></i><p>Balanced nutrition</p></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-semibold mb-4 text-blue-900">Benefits of Small Grain Silage for Livestock</h2>
+            <div class="grid-cols-2">
+                <div class="card">
+                    <ul>
+                        <li><i class="fas fa-heartbeat icon"></i><p>Improves growth rates</p></li>
+                        <li><i class="fas fa-drumstick-bite icon"></i><p>Enhances feed efficiency</p></li>
+                        <li><i class="fas fa-heart"></i><p>Boosts overall health</p></li>
+                        <li><i class="fas fa-seedling icon"></i><p>Supports reproduction</p></li>
+                    </ul>
+                </div>
+                <img src="small-grain-benefits.jpg" alt="Benefits Image" class="rounded-lg">
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 bg-gradient-to-r from-black to-blue-500">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-between">
+                <div class="w-full sm:w-1/2 md:w-1/3 mb-6">
+                    <h5 class="uppercase font-bold mb-2">Quick Links</h5>
+                    <ul class="list-none">
+                        <li class="mb-2"><a href="index.html#home" class="text-sm hover:underline">Home</a></li>
+                        <li class="mb-2"><a href="index.html#about" class="text-sm hover:underline">About</a></li>
+                        <li class="mb-2"><a href="index.html#products" class="text-sm hover:underline">Products</a></li>
+                    </ul>
+                </div>
+                <div class="w-full sm:w-1/2 md:w-1/3 mb-6">
+                    <h5 class="uppercase font-bold mb-2">Contact Us</h5>
+                    <p class="text-sm mb-2">Karur, TamilNadu.</p>
+                    <p class="text-sm mb-2">Email: televeininfo@gmail.com</p>
+                    <p class="text-sm">Phone: (91) 9445617174</p>
+                </div>
+                <div class="w-full md:w-1/3 mb-6">
+                    <h5 class="uppercase font-bold mb-2">Follow Us</h5>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-linkedin fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-4 bg-gradient-to-r to-black from-blue-500">
+            <p class="text-sm">&copy; 2024 TeleVein. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
