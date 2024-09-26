@@ -104,7 +104,7 @@
 
   <!-- Home Section -->
   
-  <section id="home" class=" relative flex items-center justify-center bg-cover text-center" style="background-image: url('home.png'); height: 100vh;">
+  <section id="home" class=" relative flex items-center justify-center bg-cover text-center" style="background-image: url('image/home.png'); height: 100vh;">
     <div class="absolute inset-0 bg-black-50"></div> <!-- Overlay -->
     <div class="relative z-9">
         <h2 class="text-3xl sm:text-5xl md:text-7xl font-bold text-white mb-4">Welcome to the Our Silage Product</h2>
@@ -219,7 +219,7 @@
             <div class="py-4 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-gradient-to-r bg-gray-200 hover:from-black hover:to-blue-500 hover:text-white text-black font-semibold px-6 py-3 rounded-md group">
                 <div class="text-center">
                     <div class="flex justify-center"> 
-                        <img src="1.png" alt="Maize Silage" class="w-36 h-36 mb-2"> <!-- Add actual image URL -->
+                        <img src="image/1.png" alt="Maize Silage" class="w-36 h-36 mb-2"> <!-- Add actual image URL -->
                     </div>
                     <h3 class="text-xl font-semibold mb-2 text-black group-hover:text-white">Corn Silage</h3>
                     <p class="text-gray-700 group-hover:text-white">Can cost around ₹5 per kilogram</p>
@@ -230,7 +230,7 @@
             <div class="py-4 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-gradient-to-r bg-gray-200 hover:from-black hover:to-blue-500 hover:text-white text-black font-semibold px-6 py-3 rounded-md group">
                 <div class="text-center">
                     <div class="flex justify-center"> 
-                        <img src="2.png" alt="Corn Maize Silage" class="w-36 h-36 mb-2"> <!-- Add actual image URL -->
+                        <img src="image/2.png" alt="Corn Maize Silage" class="w-36 h-36 mb-2"> <!-- Add actual image URL -->
                     </div>
                     <h3 class="text-xl font-semibold mb-2 text-black group-hover:text-white">Grass Silage</h3>
                     <p class="text-gray-700 group-hover:text-white">Can cost around ₹6 per kilogram</p>
@@ -241,7 +241,7 @@
             <div class="py-4 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-gradient-to-r bg-gray-200 hover:from-black hover:to-blue-500 hover:text-white text-black font-semibold px-6 py-3 rounded-md group">
                 <div class="text-center">
                     <div class="flex justify-center"> 
-                        <img src="3.png" alt="Corn Silage" class="w-36 h-36 mb-2"> <!-- Add actual image URL -->
+                        <img src="image/3.png" alt="Corn Silage" class="w-36 h-36 mb-2"> <!-- Add actual image URL -->
                     </div>
                     <h3 class="text-xl font-semibold mb-2 text-black group-hover:text-white">Alfalfa Silage</h3>
                     <p class="text-gray-700 group-hover:text-white">Can cost around ₹6.30 per kilogram</p>
@@ -252,7 +252,7 @@
             <div class="py-4 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-gradient-to-r bg-gray-200 hover:from-black hover:to-blue-500 hover:text-white text-black font-semibold px-6 py-3 rounded-md group">
                 <div class="text-center">
                     <div class="flex justify-center"> 
-                        <img src="4.png" alt="Super Napier Grass Silage" class="w-36 h-36 mb-2"> <!-- Add actual image URL -->
+                        <img src="image/4.png" alt="Super Napier Grass Silage" class="w-36 h-36 mb-2"> 
                     </div>
                     <h3 class="text-xl font-semibold mb-2 text-black group-hover:text-white">Sorghum Silage</h3>
                     <p class="text-gray-700 group-hover:text-white">Can cost around ₹5,000 per ton</p>
@@ -264,7 +264,7 @@
                 <div class="text-center">
                     <div class="flex justify-center"> <!-- Centering image horizontally -->
                        
-                        <img src="5.png" alt="NutriRich Corn Silage" class="w-36 h-36 mb-2"> <!-- Add actual image URL -->
+                        <img src="image/5.png" alt="NutriRich Corn Silage" class="w-36 h-36 mb-2"> <!-- Add actual image URL -->
                       </div>
                     <h3 class="text-xl font-semibold mb-2 text-black group-hover:text-white">Small Grain Silage</h3>
                     <p class="text-gray-700 group-hover:text-white">Can cost around ₹6 per kilogram</p>
@@ -275,7 +275,7 @@
             <div class="py-4 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-gradient-to-r bg-gray-200 hover:from-black hover:to-blue-500 hover:text-white text-black font-semibold px-6 py-3 rounded-md group">
                 <div class="text-center">
                     <div class="flex justify-center"> 
-                        <img src="6.png" alt="Baby Corn Silage" class="w-36 h-36 mb-2"> <!-- Add actual image URL -->
+                        <img src="image/6.png" alt="Baby Corn Silage" class="w-36 h-36 mb-2"> <!-- Add actual image URL -->
                     </div>
                     <h3 class="text-xl font-semibold mb-2 text-black group-hover:text-white">Legume Silage</h3>
                     <p class="text-gray-700 group-hover:text-white">Can cost around ₹5.99 per kilogram</p>
@@ -474,6 +474,24 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "o57h6bryf5");
 </script>
+<script>
+    function myFunction() {
+        const dots = document.getElementById("dots");
+        const moreText = document.getElementById("more");
+        const btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.textContent = "Read More";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.textContent = "Read Less";
+            moreText.style.display = "inline";
+        }
+    }
+</script>
+
 
 </body>
 </html>
